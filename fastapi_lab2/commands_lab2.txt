@@ -1,0 +1,12 @@
+git checkout prod
+git add Dockerfile docker-compose.yml
+git commit -m "Add Docker and PostgreSQL configuration"
+git push origin prod
+git checkout dev
+git merge prod
+docker compose up -d --build
+docker ps
+docker compose exec app pip list
+git add commands_lab2.txt screen_containers.png screen_pip.png
+git commit -m "Add lab 2 execution proofs"
+git push origin dev
