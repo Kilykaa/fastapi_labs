@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fastapi-lab1"
+version = "0.1.0"
+description = ""
+authors = ["Daniil Chvyr <daniil@example.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.109.2"
+uvicorn = "^0.29.0"
+sqlalchemy = "^2.0.27"
+asyncpg = "^0.29.0"
+alembic = "^1.13.1"
+pydantic-settings = "^2.2.1"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-jose = {extras = ["cryptography"], version = "^3.5.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
