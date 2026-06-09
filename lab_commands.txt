@@ -1,0 +1,18 @@
+Послідовність команд для Лабораторної роботи №2:
+
+1. Створення шаблону FastAPI та ініціалізація Poetry:
+poetry init -n
+poetry add fastapi uvicorn pydantic pydantic-settings sqlalchemy asyncpg psycopg2-binary
+
+2. Робота з Docker:
+docker compose build  # Збірка образів
+docker compose up -d  # Запуск контейнерів у фоновому режимі (app та db)
+docker compose ps     # Перевірка статусу запущених контейнерів
+
+3. Робота з Git:
+git init
+git checkout -b dev
+git add .
+git commit -m "feat: Додано базовий шаблон FastAPI та Docker-налаштування"
+git branch main
+git push -u origin dev
